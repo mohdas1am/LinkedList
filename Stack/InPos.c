@@ -43,7 +43,7 @@ void intopos(){
             break;
         
         case ')':
-            while(next=pop()!='(')
+            while((next=pop())!='(')
                 postfix[j++]=next;
             break;
         case '+':
@@ -58,7 +58,7 @@ void intopos(){
 
         default:
             postfix[j++]=symbol;
-            //break;
+            break;
         }
     }
     while (!isEmpty()){
